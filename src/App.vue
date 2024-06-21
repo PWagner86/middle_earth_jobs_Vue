@@ -9,7 +9,7 @@
       <button @click="handleClick('location')">order by location</button>
     </div>
   </header>
-  <JobList :order="order" />
+  <JobList :jobs="jobs" :order="order" />
 </template>
 
 <script lang="ts">
@@ -29,14 +29,14 @@ export default defineComponent({
       {title: 'gardener', location: 'fangorn', salary: 4000, id: 2},
       {title: 'blacksmith', location: 'erebor', salary: 3500, id: 3},
       {title: 'solider', location: 'minas tirith', salary: 3600, id: 4},
-      {title: 'bartender', location: 'prancing pony', salary: 2000, id: 5}
+      {title: 'bartender', location: 'prancing pony', salary: 2000, id: 5},
     ])
 
     const handleClick = (sortTerm: OrderTerm) => {
       order.value = sortTerm;
     }
 
-    return {order, handleClick}
+    return {jobs, order, handleClick}
   }
 });
 </script>
