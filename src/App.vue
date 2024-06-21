@@ -1,6 +1,7 @@
 <template>
   <header>
     <div class="title">
+      <img src="./assets/one_ring.png" alt="the one ring">
       <h1>Middle-earth Jobs</h1>
     </div>
     <div class="order">
