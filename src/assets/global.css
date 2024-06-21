@@ -1,0 +1,15 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #ece6d9;
+}
+
+@font-face {
+    font-family: RingBearer;
+    src: url('ringbearer.ttf') format('opentype');
+}
+
+h1 {
+    font-family: RingBearer, sans-serif;
+    letter-spacing: 4px;
+}
+
